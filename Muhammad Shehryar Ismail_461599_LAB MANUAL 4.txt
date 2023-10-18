@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+//TASK 1:-
+    int a=1 ;
+    cout << "state number : "; 
+    cin>> a;
+    
+    int sum=0;
+    
+    for(int i=1;i<=10;i++) 
+        sum+=i;
+
+    cout << sum;
+
+
+//TASK 2:-
+    int n;
+    cout << "Enter number: ";
+    cin >>n;
+    for (int i = 1; i <= 10; ++i) 
+	{
+    cout << n << "*" <<i<< " = " << n*i << endl;
+    }
+    
+
+
+
+//TASK 3:- 
+  int n,fac=1;
+	cout<<"Enter Number:  ";
+	cin>>n;
+	for (int a=1;a<=n;a++) {
+		fac=fac*a;
+	}
+	cout<<"Factorial = "<<fac<<endl;
+
+
+//TASK 4:-
+  int num = 21;
+    int n1 = 0, n2 = 1;
+    int nextTerm;
+    cout<<"state number of elements in sequence: ";
+    cin >>num;
+    cout << n1 << ", " << n2 << ", ";
+    for(int i = 2; i < num; i++){
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        
+        cout << nextTerm <<" , ";
+    
+}
+  
+
+
+return 0;
+}
